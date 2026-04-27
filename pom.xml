@@ -343,13 +343,13 @@
 
     <repositories>
         <repository>
-            <id>spring</id>
-            <url>https://maven.aliyun.com/repository/spring</url>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
             <snapshots>
-                <enabled>true</enabled>
+                <enabled>false</enabled>
             </snapshots>
         </repository>
     </repositories>
