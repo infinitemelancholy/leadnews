@@ -1,0 +1,23 @@
+﻿server:
+  port: 9999
+spring:
+  application:
+    name: es-article
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/leadnews_article?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: root
+# 璁剧疆Mapper鎺ュ彛鎵€瀵瑰簲鐨刋ML鏂囦欢浣嶇疆锛屽鏋滀綘鍦∕apper鎺ュ彛涓湁鑷畾涔夋柟娉曪紝闇€瑕佽繘琛岃閰嶇疆
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*.xml
+  # 璁剧疆鍒悕鍖呮壂鎻忚矾寰勶紝閫氳繃璇ュ睘鎬у彲浠ョ粰鍖呬腑鐨勭被娉ㄥ唽鍒悕
+  type-aliases-package: com.leadnews.model.article.pojos
+
+
+#鑷畾涔塭lasticsearch杩炴帴閰嶇疆
+elasticsearch:
+  host: 192.168.200.130
+  port: 9200
+

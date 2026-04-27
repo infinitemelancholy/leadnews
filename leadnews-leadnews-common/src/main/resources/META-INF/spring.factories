@@ -1,0 +1,8 @@
+﻿org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.leadnews.common.exception.ExceptionCatch,\
+  com.leadnews.common.swagger.SwaggerConfiguration,\
+  com.leadnews.common.swagger.Swagger2Configuration,\
+  com.leadnews.common.aliyun.GreenTextScan,\
+  com.leadnews.common.aliyun.GreenImageScan,\
+  com.leadnews.common.redis.CacheService,\
+  com.leadnews.common.jackson.InitJacksonConfig
